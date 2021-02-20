@@ -1,0 +1,297 @@
+﻿[Settings]
+IniFileVersion=1.30
+8Dir=0
+ActiveAsTarget=1
+Interval=20
+Threshold=30
+LongThresholdX=800
+LongThresholdY=500
+LongThreshold=700
+TimeoutThreshold=12
+Timeout=400
+DGInterval=0
+ORangeDefault=3
+ORangeA=3
+ORangeB=3
+EdgeInterval=20
+EdgeIndiv=0
+CornerX=1
+CornerY=1
+DisableDefMB=0
+DisableDefX1B=0
+DisableDefX2B=0
+UseNavi=1
+UseExNavi=3
+NaviInterval=10
+NaviPersist=0
+ExNaviTransBG=1
+ExNaviFG=000000
+ExNaviBG=FFFFFF
+ExNaviTranspcy=255
+ExNaviSize=24
+ExNaviSpacing=2
+ExNaviPadding=4
+ExNaviMargin=8
+AdNaviFG=FFFFFF
+AdNaviNI=7F7F7F
+AdNaviBG=000000
+AdNaviTranspcy=220
+AdNaviSize=12
+AdNaviFont=Meiryo
+AdNaviPosition=0
+AdNaviPaddingL=6
+AdNaviPaddingR=6
+AdNaviPaddingT=3
+AdNaviPaddingB=3
+AdNaviRound=1
+AdNaviMargin=14
+AdNaviSpaceX=2
+AdNaviSpaceY=2
+AdNaviOnClick=0
+ShowTrail=0
+DrawTrailWnd=1
+TrailColor=0000FF
+TrailTranspcy=255
+TrailWidth=3
+TrailStartMove=3
+TrailInterval=10
+ShowLogs=0
+LogPosition=4
+LogPosX=0
+LogPosY=0
+LogMax=20
+LogSizeW=400
+LogInterval=500
+LogFG=FFFFFF
+LogBG=000000
+LogTranspcy=100
+LogFontSize=10
+LogFont=MS UI Gothic
+HotkeyEnable=
+HotkeyNavi=
+ScriptEditor=
+UserName=
+Password=
+TraySubmenu=0
+AdjustDlg=0
+DlgHeightLimit=800
+EditCommand=
+FoldTarget=0
+
+[ジェスチャー無効]
+Icon=%A_WinDir%\system32\shell32.dll,110
+
+[ブラウザ]
+Icon=%A_WinDir%\system32\inetcpl.cpl,7
+Exe=iexplore.exe
+Exe=chrome.exe
+Exe=firefox.exe
+
+[エクスプローラー]
+Icon=%A_WinDir%\explorer.exe,1
+WClass=CabinetWClass
+WClass=ExploreWClass
+WClass=Progman
+WClass=WorkerW
+
+[アイコン]
+Icon=%A_WinDir%\explorer.exe,1
+Level=2
+Custom=MG_TreeListHitTest()
+
+[MB_W↑_]
+G=MB_WU_
+Default=;左6行水平スクロール<MG_CR>MG_Scroll2("H", -6, 0)
+
+[MB_W↓_]
+G=MB_WD_
+Default=;右6行水平スクロール<MG_CR>MG_Scroll2("H", 6, 0)
+
+[X4B_]
+G=X4B__
+Default=;アクティブ化,ペースト<MG_CR><MG_CR>;アクティブ化<MG_CR>IfWinNotActive<MG_CR>{<MG_CR>	WinActivate<MG_CR>}<MG_CR><MG_CR>;ペースト<MG_CR>Send, ^v
+
+[X4B_↑]
+G=X4B_U_
+Default=;↑<MG_CR>Send, {Up}
+
+[X4B_↓]
+G=X4B_D_
+Default=;↓<MG_CR>Send, {Down}
+
+[X4B_←]
+G=X4B_L_
+Default=;←<MG_CR>Send, {Left}
+
+[X4B_→]
+G=X4B_R_
+Default=;→<MG_CR>Send, {Right}
+
+[X4B_↑↓]
+G=X4B_UD_
+Default=;最大サイズウィンドウを隣のモニターで最大化<MG_CR>Send, #{Left}#{Left}#{Up}
+
+[X4B_↓↑]
+G=X4B_DU_
+Default=;Space<MG_CR>Send, {Space}
+
+[X5B_]
+G=X5B__
+Default=;アクティブ化,コピー<MG_CR><MG_CR>;アクティブ化<MG_CR>IfWinNotActive<MG_CR>{<MG_CR>	WinActivate<MG_CR>}<MG_CR><MG_CR>;コピー<MG_CR>Send, ^c
+
+[X5B_↑]
+G=X5B_U
+Default=;下にドラッグスクロール<MG_CR>if (MG_While()) {<MG_CR>    MG_DragScroll2(1, 0, 40, 40)<MG_CR>}
+
+[X5B_↓]
+G=X5B_D
+Default=;上にドラッグスクロール<MG_CR>if (MG_While()) {<MG_CR>    MG_DragScroll2(1, 0, 40, 40)<MG_CR>}
+
+[X5B_←]
+G=X5B_L
+Default=;右にドラッグスクロール<MG_CR>if (MG_While()) {<MG_CR>    MG_DragScroll2(1, 0, 40, 40)<MG_CR>}
+
+[X5B_→]
+G=X5B_R
+Default=;左にドラッグスクロール<MG_CR>if (MG_While()) {<MG_CR>    MG_DragScroll2(-1, 0, 40, 40)<MG_CR>}
+
+[RB_WU_]
+G=RB_WU_
+Default=;音量+<MG_CR>Send,{Volume_Up 1}	;上げる量を増やしたい場合は数字を変更
+
+[RB_WD_]
+G=RB_WD_
+Default=;音量-<MG_CR>Send,{Volume_Down 1}	;下げる量を増やしたい場合は数字を変更
+
+[RB_]
+G=RB_
+Default=;アクティブ化<MG_CR>IfWinNotActive<MG_CR>{<MG_CR>	WinActivate<MG_CR>}
+エクスプローラー/アイコン=;ジェスチャーキャンセル<MG_CR>MG_Abort()
+
+[RB_→]
+G=RB_R_
+Default=;進む<MG_CR>Send, !{Right}
+
+[RB_↑]
+G=RB_U_
+Default=;上へ1ページスクロール<MG_CR>MG_Scroll2("V", -1, 1)
+
+[RB_←]
+G=RB_L_
+Default=;戻る<MG_CR>Send, !{Left}
+
+[RB_↓]
+G=RB_D_
+Default=;下へ1ページスクロール<MG_CR>MG_Scroll2("V", 1, 1)
+
+[RB_↑↓]
+G=RB_UD_
+Default=;更新<MG_CR>Send, {F5}
+
+[RB_↑←]
+G=RB_UL_
+Default=;前のタブ<MG_CR>Send, +^{Tab}
+
+[RB_↑→]
+G=RB_UR_
+Default=;次のタブ<MG_CR>Send, ^{Tab}
+
+[RB_↓↑]
+G=RB_DU_
+Default=;リネーム(F2)<MG_CR>Send, {F2}
+
+[RB_↓←]
+G=RB_DL_
+Default=;タブを復元<MG_CR>Send, +^t
+
+[RB_↓→]
+G=RB_DR_
+Default=;タブを閉じる<MG_CR>Send, ^w
+
+[RB_←↑]
+G=RB_LU_
+エクスプローラー=;Ctrl+N(ウィンドウを複製)<MG_CR>Send, ^n
+
+[RB_←↓]
+G=RB_LD_
+Default=;新規フォルダ作成<MG_CR>Send, ^+N
+
+[RB_←→]
+G=RB_LR_
+Default=;アンドゥ<MG_CR>Send, ^z
+
+[RB_→↑]
+G=RB_RU_
+Default=;上端スクロール(10000行に設定)<MG_CR>MG_Scroll2("V", -10000, 0)
+
+[RB_→↓]
+G=RB_RD_
+Default=;下端スクロール(10000行に設定)<MG_CR>MG_Scroll2("V", 10000, 0)
+
+[RB_→←]
+G=RB_RL_
+Default=;リドゥ<MG_CR>Send, ^y
+
+[RB_↑↓↑]
+G=RB_UDU_
+Default=;最大化<MG_CR>WinMaximize
+
+[RB_↑↓→]
+G=RB_UDR_
+Default=;ウィンドウを閉じる<MG_CR>Send, !{F4}
+
+[RB_↑→↓]
+G=RB_URD_
+Default=;全選択<MG_CR>Send, ^a
+
+[RB_↓↑↓]
+G=RB_DUD_
+Default=;ウィンドウを最小化<MG_CR>WinMinimize
+
+[RB_↓←↓]
+G=RB_DLD_
+Default=;英字モード(Ctrl+ひらがな)<MG_CR>Send, ^{vkF2}
+
+[RB_↓→↓]
+G=RB_DRD_
+Default=;Ctrl+Alt+S<MG_CR>Send, ^!s
+
+[RB_↓→↑]
+G=RB_DRU_
+Default=;ペースト<MG_CR>Send, ^v
+
+[RB_←↓←]
+G=RB_LDL_
+Default=;Ctrl+Alt+F(CliborFIFO)<MG_CR>Send, ^!f
+
+[RB_←↓→]
+G=RB_LDR_
+Default=;コピー<MG_CR>Send, ^c
+
+[RB_←→↑]
+G=RB_LRU_
+Default=;タスクマネージャー起動<MG_CR>Send, +^{Escape}
+
+[RB_←→←]
+G=RB_LRL_
+Default=;デスクトップフォルダを開く<MG_CR>Run, %A_Desktop%
+
+[RB_→←→]
+G=RB_RLR_
+Default=;Enter<MG_CR>Send, {Enter}
+
+[RB_→↓←]
+G=RB_RDL_
+Default=;削除<MG_CR>Send, {Delete}
+
+[RB_→↓→]
+G=RB_RDR_
+Default=;カット<MG_CR>Send, ^x
+
+[RB_→←↓]
+G=RB_RLD_
+Default=;キー操作を発生させる<MG_CR>Send, ^t
+
+[RB_←↓→↓←]
+G=RB_LDRDL_
+Default=;自動ログイン(Ctrl+Space)<MG_CR>Send, ^{vkF2} ;英字入力モードにする<MG_CR>Send, ^{Space}
