@@ -1,0 +1,1 @@
+PowerShell -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass "C:\Users\yoshito_sub\Desktop\tools\Batches\AutoGit-with_wait.ps1"
