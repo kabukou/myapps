@@ -276,7 +276,7 @@ Goto, MG_Config_End
 
 MG_IsDisable() {
 	global
-	return ((MG_WClass="GHOST_WindowClass") || (MG_WClass="Chrome_WidgetWin_2") || (compareClassNN("SWT_Window021")) || (MG_Exe="r5apex.exe"))
+	return ((MG_WClass="GHOST_WindowClass") || (MG_WClass="Chrome_WidgetWin_2") || (compareClassNN("SWT_Window021")) || (MG_Exe="r5apex.exe") || (MG_Exe="Fusion360.exe"))
 }
 
 MG_IsTarget1() {
